@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeos Comerciais | Brysada Studio</title>
+
+  <meta name="description" content="Vídeos comerciais e promocionais com estética profissional. Conteúdo estratégico para marcas, empresas e negócios.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --preto: #0b0b0b;
+      --cinza: #151515;
+      --vermelho: #b11212;
+      --texto: #f1f1f1;
+      --texto-suave: #b5b5b5;
+      --dourado: #c9a24d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--preto);
+      color: var(--texto);
+    }
+
+    section {
+      padding: 100px 10%;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--texto-suave);
+      line-height: 1.7;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      max-width: 720px;
+    }
+
+    .hero span {
+      color: var(--vermelho);
+    }
+
+    .hero p {
+      max-width: 520px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 14px 36px;
+      background: var(--vermelho);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d31616;
+    }
+
+    /* SERVIÇOS */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .service {
+      background: var(--cinza);
+      padding: 50px 40px;
+      border: 1px solid #222;
+    }
+
+    .service h3 {
+      margin-bottom: 15px;
+      font-weight: 500;
+      color: var(--dourado);
+    }
+
+    /* PORTFÓLIO */
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .video {
+      background: #111;
+      aspect-ratio: 16/9;
+    }
+
+    /* CTA */
+    .cta {
+      background: #080808;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.4rem;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      section {
+        padding: 80px 8%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Vídeos que <span>valorizam sua marca</span> e comunicam com clareza.</h1>
+    <p>
+      Produções audiovisuais estratégicas para empresas, marcas e profissionais
+      que buscam autoridade, presença e impacto.
+    </p>
+
+    <a href="https://wa.me/55SEUNUMEROAQUI" class="btn" target="_blank">
+      Solicitar orçamento
+    </a>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services">
+    <div class="service">
+      <h3>Vídeos Institucionais</h3>
+      <p>Apresente sua empresa com profissionalismo e credibilidade.</p>
+    </div>
+
+    <div class="service">
+      <h3>Conteúdo para Redes Sociais</h3>
+      <p>Vídeos dinâmicos, modernos e pensados para engajamento.</p>
+    </div>
+
+    <div class="service">
+      <h3>Vídeos Promocionais</h3>
+      <p>Destaque produtos, serviços e campanhas de forma estratégica.</p>
+    </div>
+
+    <div class="service">
+      <h3>Eventos Corporativos</h3>
+      <p>Registros profissionais para convenções, palestras e lançamentos.</p>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section class="portfolio">
+    <div class="video"></div>
+    <div class="video"></div>
+    <div class="video"></div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <h2>Pronto para elevar a comunicação da sua marca?</h2>
+    <a href="https://wa.me/55SEUNUMEROAQUI" class="btn" target="_blank">
+      Falar no WhatsApp
+    </a>
+  </section>
+
+</body>
+</html>
