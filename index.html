@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brysada Studio | Produções Audiovisuais</title>
+
+  <meta name="description" content="Produções audiovisuais profissionais em Itabira MG e em todo o Brasil. Casamentos e vídeos comerciais com padrão cinematográfico.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --preto: #0b0b0b;
+      --cinza: #1a1a1a;
+      --vermelho: #b11212;
+      --texto: #f1f1f1;
+      --texto-suave: #b5b5b5;
+      --dourado: #c9a24d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--preto);
+      color: var(--texto);
+    }
+
+    section {
+      padding: 100px 10%;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--texto-suave);
+      line-height: 1.7;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      max-width: 720px;
+    }
+
+    .hero span {
+      color: var(--dourado);
+    }
+
+    .hero p {
+      max-width: 520px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 14px 36px;
+      background: var(--vermelho);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d31616;
+    }
+
+    /* SERVIÇOS */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .service-card {
+      background: var(--cinza);
+      padding: 90px 50px;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #222;
+      transition: 0.4s;
+      position: relative;
+    }
+
+    .service-card::before {
+      content: "";
+      width: 40px;
+      height: 2px;
+      background: var(--dourado);
+      position: absolute;
+      top: 40px;
+      left: 50px;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--vermelho);
+    }
+
+    .service-card h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* SOBRE */
+    .about {
+      max-width: 700px;
+    }
+
+    /* CTA FINAL */
+    .cta {
+      text-align: center;
+      background: #080808;
+    }
+
+    .cta h2 {
+      font-size: 2.4rem;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      section {
+        padding: 80px 8%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Produções audiovisuais que <span>elevam histórias e marcas</span>.</h1>
+    <p>Vídeos profissionais com estética cinematográfica em Itabira–MG e em todo o Brasil.</p>
+    <a href="https://wa.me/55SEUNUMEROAQUI" class="btn" target="_blank">
+      Solicitar orçamento
+    </a>
+  </section>
+
+  <!-- ESCOLHA DE ÁREA -->
+  <section class="services">
+    <a href="casamentos.html" class="service-card">
+      <h2>Casamentos</h2>
+      <p>Filmes que eternizam sentimentos, histórias reais e momentos únicos.</p>
+    </a>
+
+    <a href="comercial.html" class="service-card">
+      <h2>Vídeos Comerciais</h2>
+      <p>Conteúdo estratégico para valorizar marcas, produtos e negócios.</p>
+    </a>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about">
+    <p>
+      O Brysada Studio nasce da união entre criatividade, técnica e sensibilidade.
+      Cada projeto é pensado de forma única, com atenção aos detalhes e foco em contar
+      histórias que geram conexão e valor.
+    </p>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <h2>Vamos criar algo exclusivo?</h2>
+    <a href="https://wa.me/55SEUNUMEROAQUI" class="btn" target="_blank">
+      Falar no WhatsApp
+    </a>
+  </section>
+
+</body>
+</html>
