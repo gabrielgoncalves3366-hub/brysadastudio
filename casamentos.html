@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casamentos | Brysada Studio</title>
+
+  <meta name="description" content="Filmes de casamento com estética cinematográfica. Eternize sua história com sensibilidade, emoção e cuidado.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --preto: #0b0b0b;
+      --cinza: #141414;
+      --texto: #f1f1f1;
+      --texto-suave: #b5b5b5;
+      --dourado: #c9a24d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--preto);
+      color: var(--texto);
+    }
+
+    section {
+      padding: 100px 10%;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--texto-suave);
+      line-height: 1.8;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: 3.4rem;
+      max-width: 700px;
+    }
+
+    .hero span {
+      color: var(--dourado);
+    }
+
+    .hero p {
+      max-width: 520px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      margin-top: 45px;
+      display: inline-block;
+      padding: 14px 36px;
+      background: transparent;
+      color: var(--dourado);
+      border: 1px solid var(--dourado);
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--dourado);
+      color: #000;
+    }
+
+    /* CONCEITO */
+    .concept {
+      max-width: 720px;
+    }
+
+    .concept h2 {
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+    }
+
+    /* PORTFÓLIO */
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .video {
+      background: var(--cinza);
+      aspect-ratio: 16/9;
+    }
+
+    /* CTA FINAL */
+    .cta {
+      text-align: center;
+      background: #080808;
+    }
+
+    .cta h2 {
+      font-size: 2.4rem;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      section {
+        padding: 80px 8%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Filmes de casamento que <span>eternizam histórias reais</span>.</h1>
+    <p>
+      Cada detalhe, cada emoção e cada olhar contam uma história única.
+      Nosso trabalho é transformar esse momento em um filme que você vai
+      reviver para sempre.
+    </p>
+
+    <a href="https://wa.me/55SEUNUMEROAQUI" class="btn" target="_blank">
+      Quero eternizar meu momento
+    </a>
+  </section>
+
+  <!-- CONCEITO -->
+  <section class="concept">
+    <h2>Mais do que um vídeo, um filme.</h2>
+    <p>
+      Acreditamos que o casamento não é apenas um evento, mas um capítulo
+      importante de uma história. Por isso, cada filme é construído com
+      sensibilidade, estética e atenção aos detalhes, respeitando a essência
+      de cada casal.
+    </p>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section class="portfolio">
+    <div class="video"></div>
+    <div class="video"></div>
+    <div class="video"></div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <h2>Vamos contar a sua história?</h2>
+    <a href="https://wa.me/55SEUNUMEROAQUI" class="btn" target="_blank">
+      Falar no WhatsApp
+    </a>
+  </section>
+
+</body>
+</html>
